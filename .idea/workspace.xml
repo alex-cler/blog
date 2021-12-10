@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="68d1e178-ed44-4326-b4d0-52f1271e2125" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet PHP/app/src/View/Frontend/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet PHP/app/src/View/Frontend/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet PHP/app/src/View/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet PHP/app/src/View/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet PHP/app/src/View/style/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/Projet PHP/app/src/View/style/bootstrap.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +49,8 @@
       <recent name="$PROJECT_DIR$/Projet PHP" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Projet PHP/app/src/View/style" />
       <recent name="$PROJECT_DIR$/Projet PHP/app/src/View" />
+      <recent name="$PROJECT_DIR$/Projet PHP/app/src/View/style" />
       <recent name="$PROJECT_DIR$/Projet PHP/app/src/View/Frontend" />
       <recent name="$PROJECT_DIR$/Projet PHP" />
     </key>
