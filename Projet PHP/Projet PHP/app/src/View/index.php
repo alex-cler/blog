@@ -44,15 +44,14 @@ $DateTime=strftime("%B-%d-%Y %H:%M:%S",$CurrentTime);
             </ul>
         </div>
         <ul class="navbar-nav">
+            <a href="/login">
             <button class="btn btn-outline-primary" type="submit text-primary" >Se connecter</button>
+            </a>
         </ul>
     </div>
 </nav>
 <main class="pt-5 m-auto" style="width: 80vw;">
-    <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search" style="color: darkblue;">
-        <button class="btn btn-outline-primary" type="submit text-primary" >Rechercher</button>
-    </form>
+
     <div>
         <?php echo $content; ?>
     </div>
