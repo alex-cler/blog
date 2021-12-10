@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b5d2e5ab-1e3d-4d07-b8e5-147475bf0e9c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/database/mysql/columns_priv.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/columns_priv.MAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/db.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/db.MAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/event.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/event.MAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/func.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/func.MAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/global_priv.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/global_priv.MAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/plugin.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/plugin.MAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/procs_priv.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/procs_priv.MAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/proxies_priv.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/proxies_priv.MAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/roles_mapping.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/roles_mapping.MAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/servers.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/servers.MAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/tables_priv.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/tables_priv.MAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/time_zone.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/time_zone.MAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/time_zone_leap_second.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/time_zone_leap_second.MAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/time_zone_name.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/time_zone_name.MAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/time_zone_transition_type.MAI" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/time_zone_transition_type.MAI" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/app/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Php File with html" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/app/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="220F15nIgwkEDiKNiq7ufK6scl7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/View" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jepr9\Documents\PROJETS TP\FINAL PHP\Projet PHP\app\src\View" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jepr9\Documents\PROJETS TP\FINAL PHP\Projet PHP\app" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5d2e5ab-1e3d-4d07-b8e5-147475bf0e9c" name="Changes" comment="" />
+      <created>1638966380693</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638966380693</updated>
+      <workItem from="1638966382528" duration="39348000" />
+      <workItem from="1639066785672" duration="470000" />
+      <workItem from="1639069935605" duration="38924000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
