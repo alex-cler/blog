@@ -4,6 +4,7 @@
     <route path="/" action="index" controller="PostController" />
     <route path="login" action="login" controller="SecurityController"></route>
     <route path="post" action="post" controller="PostController" params="id"/>
+    <route path="createaccount" action="create" controller="SecurityController"></route>
 
 
     <route path="write" action="create" controller="PostController" />

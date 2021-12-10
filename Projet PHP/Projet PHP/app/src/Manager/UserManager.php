@@ -6,10 +6,6 @@ use App\Fram\Factories\PDOFactory;
 use App\Fram\Interfaces\ConnectionInterface;
 
 class UserManager {
-    public function __construct(ConnectionInterface $pdo)
-    {
-        parent::__construct($pdo);
-    }
 
 
     public function getAllUsers(): array
