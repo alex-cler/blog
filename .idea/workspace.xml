@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68d1e178-ed44-4326-b4d0-52f1271e2125" name="Changes" comment="" />
+    <list default="true" id="68d1e178-ed44-4326-b4d0-52f1271e2125" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/API/ApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/API/postsApi.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638786943455</updated>
-      <workItem from="1639145459009" duration="2951000" />
+      <workItem from="1639145459009" duration="6286000" />
     </task>
     <servers />
   </component>
@@ -76,5 +80,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
