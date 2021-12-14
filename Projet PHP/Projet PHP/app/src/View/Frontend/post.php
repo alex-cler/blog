@@ -4,4 +4,9 @@
 <p><?php echo $post->getContent(); ?></p>
 <p><?php echo $post->getUserId(); ?></p>
 
-<?php print_r($comments);?>
+
+<pre>
+<?php
+print_r($users) ;
+?>
+</pre>

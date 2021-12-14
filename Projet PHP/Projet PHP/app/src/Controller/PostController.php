@@ -7,6 +7,7 @@ use App\Factory\PDOFactory;
 use App\Fram\Flash;
 use App\Manager\CommentManager;
 use App\Manager\PostManager;
+use App\Manager\UserManager;
 
 class PostController extends BaseController
 {
@@ -43,15 +44,18 @@ class PostController extends BaseController
 
     public function executePost()
     {
-        $postManager = new PostManager(new \App\Factory\PDOFactory());
+        $postManager = new PostManager(new PDOFactory());
         $commentManager = new CommentManager(new PDOFactory());
+        $userManager = new UserManager(new PDOFactory());
         $post = $postManager->getPostById($this->params['id']);
         $comments = $commentManager->getAllCommentsFromPostId($this->params['id']);
+        $users = $userManager->getAllUsers();
         $this->render(
             'post.php',
             [
                 'post' => $post,
-                'comments' => $comments
+                'comments' => $comments,
+                'users' => $users
             ],
             'Post'
         );

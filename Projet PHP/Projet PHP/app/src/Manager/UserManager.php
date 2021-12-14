@@ -1,18 +1,19 @@
 <?php
 namespace App\Manager;
 
-use App\Entity\Personnage;
-use App\Fram\Factories\PDOFactory;
-use App\Fram\Interfaces\ConnectionInterface;
+use App\Manager\BaseManager;
+use App\Entity\User;
+use App\Factory\PDOFactory;
 
-class UserManager {
+
+class UserManager extends BaseManager {
 
 
     public function getAllUsers(): array
     {
         $query = $this->pdo->query('SELECT * FROM ' . PDOFactory::DATABASE . '.users');
         $query->execute();
-        $query->setFetchMode(\PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Entity\user');
+        $query->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, 'App\Entity\User');
         return $query->fetchAll();
     }
 

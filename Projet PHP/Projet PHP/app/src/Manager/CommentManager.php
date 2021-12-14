@@ -8,11 +8,12 @@ use App\Manager\BaseManager;
 
 class CommentManager extends BaseManager {
 
-    public function getAllCommentsFromPostId(int $postId): array
+    public function getAllCommentsFromPostId(int $postId)
     {
         $query = $this->pdo->prepare('SELECT * FROM ' .  PDOFactory::DATABASE . '.comments WHERE postId = :postId');
         $query->bindValue(':postId', $postId, \PDO::PARAM_INT);
         $query->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, 'App\Entity\user');
+        $query->execute();
         return $query->fetchAll();
     }
 
