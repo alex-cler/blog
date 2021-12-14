@@ -13,6 +13,10 @@
     <route path="edit" action="edit" controller="PostController" params="id" />
     <route path="modify" action="modify" controller="PostController" params="id,title,content,userId" />
 
+    <!-- FOR API PURPOSE -->
+    <route path="posts" controller="PostController" action="postsApi" params="id,number"></route>
+    <route path="comments" controller="CommentController" action="commentsApi" params="id,mainId"></route>
+
     <!--<route path="edit" action="modify" controller="PostController" params="id, title, content" />-->
     <!--<route path="author" action="author" controller="PostController"/>-->
 

@@ -51,11 +51,38 @@ if ($this->HTTPRequest->method() === 'POST' && !$postId) :
     endif;
 
     //Patch
-if($this->HTTPRequest->method() === 'PATCH' && $postId == $post) {
+if($this->HTTPRequest->method() === 'PATCH' && $postId == $post) :
     if ($user && (!empty($_PUT['title']) || !empty($_PUT['content'])) && $user->havePostRights($post)) {
-        $postTitle = empty($_PUT['title']) ? $_POST
+        $postTitle = empty($_PUT['title']) ? $post->getTitle() : $_PUT['title'];
+        $postContent = empty($_PUT['content']) ? $post->getContent() : $_PUT['content'];
+
+        $post->setTitle($postTitle);
+        $post->setContent($postContent);
+        $success = $postManager->updatePost($post, true);
+
+        if ($success){
+            $this->HTTPResponse->setCacheHeader(300);
+            return $this->renderJSON($success);
+        }
     }
+    endif;
 }
+
+// DELETE
+if ($this->HTTPRequest->method() === 'DELETE' && $postId && $post && $user && $user->havePostRights($post)) :
+    if ($success){
+        return $this->renderJSON([
+            "status" => 1,
+            "message" => 'Post Deleted'
+        ]);
+    } endif;
+
+    // If something goes wrong :
+$this->HTTPResponse->unauthorized([
+    'Authentication' => 'Basic',
+    'Needed arguments' => ['title', 'content']
+]);
+
 
 
 

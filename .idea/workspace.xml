@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68d1e178-ed44-4326-b4d0-52f1271e2125" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/API/ApiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/API/postsApi.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/config/routes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/config/routes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/API/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/API/ApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/Controller/SecurityController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638786943455</updated>
-      <workItem from="1639145459009" duration="6286000" />
+      <workItem from="1639145459009" duration="9597000" />
     </task>
     <servers />
   </component>

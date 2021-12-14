@@ -66,4 +66,9 @@ class SecurityController extends BaseController
         return true;
 
     }
+
+    public function executeIsConnected (): bool
+    {
+
+    }
 }
