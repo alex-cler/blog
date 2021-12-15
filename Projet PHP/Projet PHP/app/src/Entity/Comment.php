@@ -8,8 +8,20 @@ class Comment extends BaseEntity
     private string $content;
     private string $publishedDate;
     private int $userId;
+    private string $pseudo;
     private int $postId;
 
+
+
+    public function setPseudo(int $id): void
+    {
+        $this->id = $id;
+    }
+
+    public function getPseudo(): string
+    {
+        return $this->pseudo;
+    }
 
     public function getId(): int
     {

@@ -34,13 +34,19 @@ class UserManager extends BaseManager {
         return $query->fetch();
     }
 
+    public function getUserExistCheck(string $email): bool
+    {
+        $query = $this->pdo->prepare('SELECT * FROM ' . PDOFactory::DATABASE . '.users' . ' ' . 'WHERE email = :email');
+        $query->bindvalue(':email', $email, \PDO::PARAM_INT);
+        return $query->execute();
+    }
+
     public function addUser(user $user): bool
     {
-        $query = $this->pdo->prepare('INSERT INTO ' . PDOFactory::DATABASE . '.users (pseudo, email, password, admin) VALUES (:pseudo, :email, :password , :admin)');
-        $query->bindValue(':pseudo', $user->getPseudo(), PDO::PARAM_STR);
-        $query->bindValue(':email', $user->getEmail(), PDO::PARAM_STR);
-        $query->bindValue(':password', $user->getPassword(), PDO::PARAM_STR);
-        $query->bindValue('admin', $user->getAdmin(), PDO::PARAM_BOOL);
+        $query = $this->pdo->prepare('INSERT INTO ' . PDOFactory::DATABASE . '.users (email, password, admin) VALUES (:email, :password , :admin)');
+        $query->bindValue(':email', $user->getEmail(), \PDO::PARAM_STR);
+        $query->bindValue(':password', $user->getPassword(), \PDO::PARAM_STR);
+        $query->bindValue('admin', $user->getAdmin(), \PDO::PARAM_BOOL);
         return $query->execute();
     }
 

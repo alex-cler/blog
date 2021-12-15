@@ -15,7 +15,7 @@
 </head>
 <body>
 <h1 style="text-align: center;">Bienvenue sur notre blog</h1>
-<form method="post" style="width: 60vw; margin: 0 auto;" action="SecurityController/">
+<form method="post" style="width: 60vw; margin: 0 auto;" action="/executeaccount">
     <div class="row mb-3">
         <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
         <div class="col-sm-10">
@@ -46,7 +46,7 @@
             </div>
         </div>
     </fieldset>
-    <button type="submit" class="btn btn-primary">Sign in</button>
+    <button type="submit" class="btn btn-primary" name="SUBMIT">Sign in</button>
     <strong>Déja un compte ? <a href="/login">Connectez-vous</a></strong>
 </form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

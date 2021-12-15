@@ -7,6 +7,7 @@
 
 <pre>
 <?php
-print_r($users) ;
+print_r($comments) ;
+print_r($comments[0]->getId());
 ?>
 </pre>

@@ -53,7 +53,7 @@ class User extends BaseEntity
         $this->password = $password;
     }
 
-    public function isAdmin(): bool
+    public function getAdmin(): bool
     {
         return $this->admin;
     }

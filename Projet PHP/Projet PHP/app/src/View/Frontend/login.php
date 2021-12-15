@@ -15,7 +15,7 @@
 </head>
 <body>
 <h1 style="text-align: center;">Bienvenue sur notre blog</h1>
-<form method="post" style="width: 60vw; margin: 0 auto;">
+<form method="post" style="width: 60vw; margin: 0 auto;" action="/access">
     <div class="row mb-3">
         <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
         <div class="col-sm-10">
@@ -29,7 +29,7 @@
         </div>
     </div>
 
-    <button href="/access" class="btn btn-primary">Sign up</button>
+    <button  type="submit" class="btn btn-primary">Sign up</button>
     <strong>Pas de compte ? <a href="/createaccount">Créez en un </a></strong>
 </form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
