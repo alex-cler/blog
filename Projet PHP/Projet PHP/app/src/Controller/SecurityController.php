@@ -27,6 +27,7 @@ class SecurityController extends BaseController
             [],
             'Show'
         );
+
     }
 
     public function executeMember()
@@ -74,46 +75,51 @@ class SecurityController extends BaseController
 
     }
 }
-    /*
 
-    public function executeAccess(): bool
+
+    public function executeAccess()
     {
-        $userManager = new userManager(new \App\Factory\PDOFactory());
-        $users = $userManager->getAllUsers();
+        if (isset($_POST['CHECK'])) {
+            //Récupération des valeurs
+            $email = $_POST['EMAIL'];
+            $password = $_POST['PASSWORD'];
+            $userManager = new UserManager (new PDOFactory());
+            $users = $userManager->getAllUsers();
 
-        if (isset($_POST['EMAIL']) || isset($_POST['PASSWORD'])) {
             foreach ($users as $user){
-                if ($user->getEmail() == $_POST['EMAIL'] && $user->getPassword() == $_POST['PASSWORD']){
-                    session_start();
-                    $_SESSION['logged_in'] = true;
-                    $_SESSION['USER_ID'] = $user->getId;
-                    $_SESSION['IsAdmin'] = $user->getAdmin;
-
+                if ($email == $user->getEmail()){
+                    if (md5($password) == $user->getPassword()){
+                        session_destroy();
+                        session_start();
+                        $_SESSION['logged_in'] = true;
+                        $_SESSION['USER_ID'] = $user->getId();
+                        $_SESSION["admin"] = $user->getAdmin();
+                        //TODO
+                        $this->render(
+                            '404.php',
+                            [],
+                            'Show'
+                        );
+                    }
+                    else {
+                        echo 'Mot de passe invalide';
+                    }
                 }
+
             }
         }
-        else
-        {
-            $this->render(
-                '404.php',
-                [],
-                'Show'
-            );
-        }
-        return True;
     }
-    /*
-    public function executeLogout(): bool
+
+    public function executeLogout(): void
     {
-        session_start();
         session_destroy();
-        return true;
+        $this->render(
+            'login.php',
+            [],
+            'Show'
+        );
 
     }
 
-    public function executeIsConnected (): bool
-    {
 
-    }
-        */
 }

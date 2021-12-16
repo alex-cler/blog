@@ -44,8 +44,16 @@ $DateTime=strftime("%B-%d-%Y %H:%M:%S",$CurrentTime);
             </ul>
         </div>
         <ul class="navbar-nav">
-            <a href="/login">
-            <button class="btn btn-outline-primary" type="submit text-primary" >Se connecter</button>
+        <?php if (isset($_SESSION['logged_in']) == false)
+        {
+            echo "<a href='/login'>";
+            echo "<button class='btn btn-outline-primary' type='submit text-primary'>Se connecter</button>";
+        }
+        else {
+            echo "<a href='/logout'>";
+            echo "<button class='btn btn-outline-primary' type='submit text-primary'>Deconnexion</button>";
+        }
+        ?>
             </a>
         </ul>
     </div>

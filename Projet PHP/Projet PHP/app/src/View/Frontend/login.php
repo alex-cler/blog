@@ -29,7 +29,7 @@
         </div>
     </div>
 
-    <button  type="submit" class="btn btn-primary">Sign up</button>
+    <button  name="CHECK" type="submit" class="btn btn-primary">Sign up</button>
     <strong>Pas de compte ? <a href="/createaccount">Créez en un </a></strong>
 </form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

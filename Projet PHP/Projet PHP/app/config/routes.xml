@@ -7,6 +7,7 @@
     <route path="post" action="post" controller="PostController" params="id"/>
     <route path="createaccount" action="create" controller="SecurityController"></route>
     <route path="executeaccount" action="member" controller="SecurityController"></route>
+    <route path="logout" action="logout" controller="SecurityController"></route>
 
 
     <route path="write" action="create" controller="PostController" />
