@@ -93,13 +93,10 @@ class SecurityController extends BaseController
                         session_start();
                         $_SESSION['logged_in'] = true;
                         $_SESSION['USER_ID'] = $user->getId();
-                        $_SESSION["admin"] = $user->getAdmin();
-                        //TODO
-                        $this->render(
-                            '404.php',
-                            [],
-                            'Show'
-                        );
+                        $_SESSION['admin'] = $user->getAdmin();
+                        $_SESSION['LOGINMESSAGE'] = "Vous êtes maintenant connecté";
+
+                        header("Location: /");
                     }
                     else {
                         echo 'Mot de passe invalide';
@@ -113,11 +110,10 @@ class SecurityController extends BaseController
     public function executeLogout(): void
     {
         session_destroy();
-        $this->render(
-            'login.php',
-            [],
-            'Show'
-        );
+        session_start();
+        $_SESSION['LOGOUTMESSAGE'] = "Vous êtes maintenant déconnectés";
+        //Retour HP
+        header("Location: /");
 
     }
 

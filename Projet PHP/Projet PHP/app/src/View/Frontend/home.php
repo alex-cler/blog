@@ -2,10 +2,14 @@
 
 
 <?php
-/**
- * @var $user \App\Entity\Author
- * @var $posts \App\Entity\Post[]
- */
+if (isset($_SESSION['LOGOUTMESSAGE'])){
+    echo ('<p style="color:red">' . $_SESSION['LOGOUTMESSAGE'] . '</p>');
+    unset($_SESSION['LOGOUTMESSAGE']);
+}
+if (isset($_SESSION['LOGINMESSAGE'])){
+    echo ('<p style="color:green">' . $_SESSION['LOGINMESSAGE'] . '</p>');
+    unset($_SESSION['LOGINMESSAGE']);
+}
 
 ?>
 <table class="table">

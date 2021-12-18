@@ -51,7 +51,9 @@ $DateTime=strftime("%B-%d-%Y %H:%M:%S",$CurrentTime);
         }
         else {
             echo "<a href='/logout'>";
-            echo "<button class='btn btn-outline-primary' type='submit text-primary'>Deconnexion</button>";
+            echo "<button class='btn btn-outline-primary' type='submit text-primary'>Deconnexion</button></a>";
+            echo "<a href='/myaccount'>";
+            echo "<button class='btn btn-outline-primary' type='submit text-primary'>Mon compte</button>";
         }
         ?>
             </a>
