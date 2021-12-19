@@ -14,6 +14,18 @@
     <link rel="stylesheet" href="../style/bootstrap.css">
 </head>
 <body>
+<?php
+if (isset($_SESSION['LOGINMESSAGE'])){
+    echo ('<p style="color:green">' . $_SESSION['LOGINMESSAGE'] . '</p>');
+    unset($_SESSION['LOGINMESSAGE']);
+}
+
+if (isset($_SESSION['ERRORMESSAGE'])){
+    echo ('<p style="color:red">' . $_SESSION['ERRORMESSAGE'] . '</p>');
+    unset($_SESSION['ERRORMESSAGE']);
+}
+
+?>
 <h1 style="text-align: center;">Bienvenue sur notre blog</h1>
 <form method="post" style="width: 60vw; margin: 0 auto;" action="/access">
     <div class="row mb-3">

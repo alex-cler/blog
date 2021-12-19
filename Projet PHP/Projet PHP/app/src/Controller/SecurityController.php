@@ -66,7 +66,8 @@ class SecurityController extends BaseController
             $newUser->setPseudo($pseudo);
 
             $userManager->addUser($newUser);
-            return true;
+            $_SESSION['LOGINMESSAGE'] = "Votre compte a bien été créé. Veuillez vous connecter.";
+            header("Location: /login");
         }
         else {
             $this->render(
@@ -99,11 +100,14 @@ class SecurityController extends BaseController
                         $_SESSION['admin'] = $user->getAdmin();
                         $_SESSION['LOGINMESSAGE'] = "Vous êtes maintenant connecté";
 
-                        header("Location: /");
+                        return header("Location: /");
                     }
-                    else {
-                        echo 'Mot de passe invalide';
-                    }
+
+                }
+            else
+            {
+                $_SESSION['ERRORMESSAGE'] = "Utilisateur introuvable.. Veuillez rentrer un email et un mot de passe valide.";
+                header("Location: /login");
                 }
 
             }
