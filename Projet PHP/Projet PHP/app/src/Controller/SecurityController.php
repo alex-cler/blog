@@ -36,6 +36,7 @@ class SecurityController extends BaseController
 
         //Récupération des valeurs
         $email = $_POST['EMAIL'];
+        $pseudo = $_POST['PSEUDO'];
         $password = $_POST['PASSWORD'];
         $admin = $_POST['ADMIN'];
         $errors = [];
@@ -44,6 +45,7 @@ class SecurityController extends BaseController
         if (empty($email)) { array_push($errors, "Email requis"); }
         //if (filter_var($email, FILTER_VALIDATE_EMAIL) !== TRUE) { array_push($errors, "Rentrez un email valide"); }
         if (empty($password)) { array_push($errors, "Mot de passe requis"); }
+            if (empty($pseudo)) { array_push($errors, "Pseudo requis"); }
 
 
         $userManager = new UserManager (new PDOFactory());
@@ -61,6 +63,7 @@ class SecurityController extends BaseController
             $newUser->setEmail($email);
             $newUser->setPassword($securedPassword);
             $newUser->setAdmin($admin);
+            $newUser->setPseudo($pseudo);
 
             $userManager->addUser($newUser);
             return true;

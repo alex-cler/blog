@@ -43,10 +43,11 @@ class UserManager extends BaseManager {
 
     public function addUser(user $user): bool
     {
-        $query = $this->pdo->prepare('INSERT INTO ' . PDOFactory::DATABASE . '.users (email, password, admin) VALUES (:email, :password , :admin)');
+        $query = $this->pdo->prepare('INSERT INTO ' . PDOFactory::DATABASE . '.users (email, pseudo, password, admin) VALUES (:email, :pseudo, :password , :admin)');
         $query->bindValue(':email', $user->getEmail(), \PDO::PARAM_STR);
         $query->bindValue(':password', $user->getPassword(), \PDO::PARAM_STR);
-        $query->bindValue('admin', $user->getAdmin(), \PDO::PARAM_BOOL);
+        $query->bindValue(':admin', $user->getAdmin(), \PDO::PARAM_BOOL);
+        $query->bindValue(':pseudo', $user->getPseudo(), \PDO::PARAM_STR);
         return $query->execute();
     }
 

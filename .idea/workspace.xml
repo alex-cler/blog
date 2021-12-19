@@ -7,9 +7,8 @@
     <list default="true" id="68d1e178-ed44-4326-b4d0-52f1271e2125" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/View/Frontend/author.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/View/Frontend/myaccount.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/View/Frontend/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/View/Frontend/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/View/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/View/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/Manager/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/Manager/UserManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/View/Frontend/CreateAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet PHP/Projet PHP/app/src/View/Frontend/CreateAccount.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638786943455</updated>
-      <workItem from="1639145459009" duration="26387000" />
+      <workItem from="1639145459009" duration="28201000" />
     </task>
     <servers />
   </component>
